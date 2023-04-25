@@ -14,6 +14,11 @@ On Windows
 dist\oobabooga.exe -install -home D:\oobabooga -- --model-dir D:\models --chat --auto-launch
 ```
 
+works with git bash as well
+```bash
+dist/oobabooga.exe --home /d/oobabooga -- -h
+```
+
 That's basically it, GUI should open in your browser in chat mode.
 See `oobabooga --help` and `oobabooga --home YOUR_HOME -- -h`
 
