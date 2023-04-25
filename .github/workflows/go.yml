@@ -1,0 +1,41 @@
+name: Release Launcher
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+
+  release-launcher:
+    name: release amd64 binaries
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Create release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: "${{  github.ref_name }}"
+        release_name: Launcher ${{  github.ref_name }}
+
+    - uses: actions/checkout@v3
+    - uses: wangyoucao577/go-release-action@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        goos: linux
+        goarch: amd64
+
+    - uses: wangyoucao577/go-release-action@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        goos: windows
+        goarch: amd64
+
+    - uses: wangyoucao577/go-release-action@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        goos: darwin
+        goarch: amd64
