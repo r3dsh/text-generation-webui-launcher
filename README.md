@@ -3,6 +3,8 @@
 
 `smh...`
 
+Not really tested anywhere ;-)
+
 ## Usage
 
 Since Launcher supports multiple Obabooga installations (ie. different branches), `-home` argument is always required.
