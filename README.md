@@ -5,6 +5,8 @@
 
 Not really tested anywhere ;-)
 
+For original thing go to https://github.com/oobabooga/text-generation-webui
+
 ## Usage
 
 Since Launcher supports multiple Obabooga installations (ie. different branches), `-home` argument is always required.
