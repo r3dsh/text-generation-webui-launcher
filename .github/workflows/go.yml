@@ -1,9 +1,8 @@
 name: Release Launcher
 
 on:
-  push:
-    tags:
-      - 'v*.*.*'
+  release:
+    types: [created]
 
 jobs:
 
@@ -15,15 +14,6 @@ jobs:
         goos: [linux, darwin, windows]
         goarch: [amd64]
     steps:
-
-#    - name: Release Launcher Binary
-#      id: create_release
-#      uses: actions/create-release@v1
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#      with:
-#        tag_name: "${{  github.ref_name }}"
-#        release_name: Launcher ${{  github.ref_name }}
 
     - uses: actions/checkout@v3
     - uses: wangyoucao577/go-release-action@v1.37
