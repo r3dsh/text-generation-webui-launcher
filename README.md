@@ -41,12 +41,17 @@ See `text-generation-webui-launcher --help` and `text-generation-webui-launcher 
 
 For Windows
 ```bash
-go build -o dist/text-generation-webui-launcher.exe cmd/main.go
+GOOS=windows go build -o dist/text-generation-webui-launcher.exe cmd/main.go
 ```
 
 For Linux
 ```bash
 go build -o dist/text-generation-webui-launcher cmd/main.go
+```
+
+For MacOS
+```bash
+GOOS=darwin go build -o dist/text-generation-webui-launcher cmd/main.go
 ```
 
 ## Building with Docker
