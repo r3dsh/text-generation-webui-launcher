@@ -68,4 +68,5 @@ docker run --rm -ti -v $(pwd):/go/src golang:1.20 bash -c "cd src; go build -o d
 
 ## TODO
 
-Add support for zip bundles allowing to download whole environment as one big file (approx. 1GB) instead of pulling a bunch of small files.
+- Fetch GIT binaries (launcher.go line 122)
+- Add support for zip bundles allowing to download whole environment as one big file (approx. 1GB) instead of pulling a bunch of small files.
