@@ -16,17 +16,17 @@ jobs:
         goarch: [amd64]
     steps:
 
-    - name: Create release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: "${{  github.ref_name }}"
-        release_name: Launcher ${{  github.ref_name }}
+#    - name: Release Launcher Binary
+#      id: create_release
+#      uses: actions/create-release@v1
+#      env:
+#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#      with:
+#        tag_name: "${{  github.ref_name }}"
+#        release_name: Launcher ${{  github.ref_name }}
 
     - uses: actions/checkout@v3
-    - uses: wangyoucao577/go-release-action@v1
+    - uses: wangyoucao577/go-release-action@v1.37
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
