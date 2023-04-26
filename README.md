@@ -34,7 +34,7 @@ Original server.py arguments are passed after "--".
 
 That's basically it, after installation is done, GUI should open in your browser in chat mode. Other examples:
 
-#### Git bash as well
+#### Git bash
 ```bash
 dist/text-generation-webui-launcher.exe --home /d/oobabooga -- -h
 ```
