@@ -19,7 +19,7 @@ Since Launcher supports multiple [text-generation-webui](https://github.com/ooba
 dist\text-generation-webui-launcher.exe -install -home D:\oobabooga -- --model-dir D:\models --chat --auto-launch
 ```
 
-That's basically it, GUI should open in your browser in chat mode. Other examples:
+That's basically it, after installation is done, GUI should open in your browser in chat mode. Other examples:
 
 #### Git bash as well
 ```bash
