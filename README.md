@@ -8,7 +8,7 @@ TBH no idea if anything I described above is actually true. This project was put
 
 ## Download
 
-https://github.com/r3dsh/text-generation-webui-launcher/blob/main/dist/launcher.exe
+https://github.com/r3dsh/text-generation-webui-launcher/releases
 
 ## Usage
 
