@@ -17,9 +17,9 @@ func main() {
 
     os.Args = append([]string{os.Args[0]}, launcherArgs...)
     installDirPtr := flag.String("home", "", "target directory")
-    installBranchPtr := flag.String("branch", "main", "git branch to install text-generation-webui from")
+    installBranchPtr := flag.String("branch", "main", "text-generation-webui git branch")
     installPythonPtr := flag.String("python", "3.10.11", "python version to use")
-    installActionPtr := flag.Bool("install", false, "install text-generation-webui GUI")
+    installActionPtr := flag.Bool("install", false, "install text-generation-webui")
     flag.Parse()
 
     if *installDirPtr == "" {

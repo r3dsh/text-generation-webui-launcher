@@ -23,7 +23,7 @@ Usage of ./text-generation-webui-launcher.exe:
   -home string
         target directory
   -install
-        install text-generation-webui GUI
+        install text-generation-webui
   -python string
         python version to use (default "3.10.11")
 
@@ -32,7 +32,7 @@ dist\text-generation-webui-launcher.exe -install -home D:\oobabooga -- --model-d
 
 Original server.py arguments are passed after "--".
 
-That's basically it, after installation is done, GUI should open in your browser in chat mode. Other examples:
+That's basically it, after installation is done, webui should open in your browser in chat mode. Other examples:
 
 #### Git bash
 ```bash
