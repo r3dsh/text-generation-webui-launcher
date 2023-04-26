@@ -14,17 +14,17 @@ https://github.com/r3dsh/text-generation-webui-launcher/releases
 
 Since Launcher supports multiple text-generation-webui installations (ie. different branches), `-home` argument is always required.
 
-On Windows
+#### On Windows
 ```bash
 dist\text-generation-webui-launcher.exe -install -home D:\oobabooga -- --model-dir D:\models --chat --auto-launch
 ```
 
-works with git bash as well
+#### Git bash as well
 ```bash
 dist/text-generation-webui-launcher.exe --home /d/oobabooga -- -h
 ```
 
-and under WSL (linux binary)
+#### And WSL (linux binary)
 ```bash
 └─$ ./text-generation-webui-launcher -home /mnt/d/oobabooga
 2023/04/26 06:33:11 Starting text-generation-webui from /mnt/d/oobabooga/text-generation-webui-main
