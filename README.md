@@ -16,39 +16,48 @@ Since Launcher supports multiple text-generation-webui installations (ie. differ
 
 On Windows
 ```bash
-dist\launcher.exe -install -home D:\oobabooga -- --model-dir D:\models --chat --auto-launch
+dist\text-generation-webui-launcher.exe -install -home D:\oobabooga -- --model-dir D:\models --chat --auto-launch
 ```
 
 works with git bash as well
 ```bash
-dist/launcher.exe --home /d/oobabooga -- -h
+dist/text-generation-webui-launcher.exe --home /d/oobabooga -- -h
 ```
 
+and under WSL (linux binary)
+```bash
+└─$ ./text-generation-webui-launcher -home /mnt/d/oobabooga
+2023/04/26 06:33:11 Starting text-generation-webui from /mnt/d/oobabooga/text-generation-webui-main
+2023/04/26 06:33:11    spawning server.py
+```
+
+All from one directory. Python packages and environment variables are managed by launcher.
+
 That's basically it, GUI should open in your browser in chat mode.
-See `launcher --help` and `launcher --home YOUR_HOME -- -h`
+See `text-generation-webui-launcher --help` and `text-generation-webui-launcher --home YOUR_HOME -- -h`
 
 ## Building
 
 For Windows
 ```bash
-go build -o dist/launcher.exe cmd/main.go
+go build -o dist/text-generation-webui-launcher.exe cmd/main.go
 ```
 
 For Linux
 ```bash
-go build -o dist/launcher cmd/main.go
+go build -o dist/text-generation-webui-launcher cmd/main.go
 ```
 
 ## Building with Docker
 
 On Windows
 ```bash
-docker run --rm -ti -v %cd%:/go/src golang:1.20 bash -c "cd src; GOOS=windows go build -o dist/launcher.exe cmd/main.go"
+docker run --rm -ti -v %cd%:/go/src golang:1.20 bash -c "cd src; GOOS=windows go build -o dist/text-generation-webui-launcher.exe cmd/main.go"
 ```
 
 On Linux
 ```bash
-docker run --rm -ti -v $(pwd):/go/src golang:1.20 bash -c "cd src; go build -o dist/launcher cmd/main.go"
+docker run --rm -ti -v $(pwd):/go/src golang:1.20 bash -c "cd src; go build -o dist/text-generation-webui-launcher cmd/main.go"
 ```
 
 ## TODO
