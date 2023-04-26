@@ -19,6 +19,8 @@ Since Launcher supports multiple text-generation-webui installations (ie. differ
 dist\text-generation-webui-launcher.exe -install -home D:\oobabooga -- --model-dir D:\models --chat --auto-launch
 ```
 
+That's basically it, GUI should open in your browser in chat mode. Other examples:
+
 #### Git bash as well
 ```bash
 dist/text-generation-webui-launcher.exe --home /d/oobabooga -- -h
@@ -33,7 +35,6 @@ dist/text-generation-webui-launcher.exe --home /d/oobabooga -- -h
 
 All from one directory. Python packages and environment variables are managed by launcher.
 
-That's basically it, GUI should open in your browser in chat mode.
 See `text-generation-webui-launcher --help` and `text-generation-webui-launcher --home YOUR_HOME -- -h`
 
 ## Building
