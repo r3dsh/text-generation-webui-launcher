@@ -1,7 +1,7 @@
 
 # Text Generation WEBUI Launcher
 
-Portable https://github.com/oobabooga/text-generation-webui installation. Independent of already installed Python or Conda environments. Self-contained setup. Single binary entrypoint.
+Portable [text-generation-webui](https://github.com/oobabooga/text-generation-webui) installation. Independent of already installed Python or Conda environments. Self-contained setup. Single binary entrypoint.
 
 TBH no idea if anything I described above is actually true. This project was put together in few minutes, so... Not really tested anywhere ;-)
 
@@ -12,7 +12,7 @@ https://github.com/r3dsh/text-generation-webui-launcher/releases
 
 ## Usage
 
-Since Launcher supports multiple text-generation-webui installations (ie. different branches), `-home` argument is always required.
+Since Launcher supports multiple [text-generation-webui](https://github.com/oobabooga/text-generation-webui) installations (ie. different branches), `-home` argument is always required.
 
 #### On Windows
 ```bash
