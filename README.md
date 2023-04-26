@@ -70,3 +70,4 @@ docker run --rm -ti -v $(pwd):/go/src golang:1.20 bash -c "cd src; go build -o d
 
 - Fetch GIT binaries (launcher.go line 122)
 - Add support for zip bundles allowing to download whole environment as one big file (approx. 1GB) instead of pulling a bunch of small files.
+- "Select Directory" OS native window for non CLI usage instead of -home directory + config file? Something really simple, no additional UIs.
