@@ -22,4 +22,5 @@ jobs:
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
         ldflags: "-s -w"
+        project_path: "cmd"
         extra_files: LICENSE README.md
