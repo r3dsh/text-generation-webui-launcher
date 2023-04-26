@@ -16,8 +16,21 @@ Since Launcher supports multiple [text-generation-webui](https://github.com/ooba
 
 #### On Windows
 ```bash
+dist\text-generation-webui-launcher.exe --help
+Usage of ./text-generation-webui-launcher.exe:
+  -branch string
+        git branch to install text-generation-webui from (default "main")
+  -home string
+        target directory
+  -install
+        install text-generation-webui GUI
+  -python string
+        python version to use (default "3.10.11")
+
 dist\text-generation-webui-launcher.exe -install -home D:\oobabooga -- --model-dir D:\models --chat --auto-launch
 ```
+
+Original server.py arguments are passed after "--".
 
 That's basically it, after installation is done, GUI should open in your browser in chat mode. Other examples:
 
